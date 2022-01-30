@@ -27,7 +27,13 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
+    <script>
+        console.log("%cHalo guyss, lagi nyoba inspect ya?", "color:purple; font-size: 20px");
+        console.log("btw langsung aja subscribe kelasnya di https://buildwithangga.com/kelas/mastering-laravel-8-for-beginners-intermediate-bangun-website-bootcamp");
+        console.log("%cMastering Laravel 8 for Beginners & Intermediate: Bangun Website Bootcamp", 'color:purple; font-weight:bold');
+        console.log("%cSee you there!", 'color:red; font-weight:bold');
+    </script>
+    @stack('js')
 </body>
 
 </html>

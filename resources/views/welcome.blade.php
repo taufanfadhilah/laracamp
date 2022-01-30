@@ -1,6 +1,24 @@
 @extends('layouts.app')
 
 @section('content')
+    <button id="btn-modal" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="visibility: hidden"></button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Let's join us!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <b>Hi folks!</b> <br>
+                what are you waiting for? get your own class by hit the button below!
+            </div>
+            <div class="modal-footer">
+                <a href="http://joinbwa.com/laravel8" class="btn btn-primary">Let's Go</a>
+            </div>
+            </div>
+        </div>
+    </div>
     <section class="banner">
         <div class="container">
             <div class="row justify-content-center">
@@ -410,3 +428,10 @@
         </div>
     </section>
 @endsection
+@push('js')
+    <script>
+        setTimeout(function(){ 
+            document.getElementById("btn-modal").click();
+         }, 2000);
+    </script>
+@endpush 
