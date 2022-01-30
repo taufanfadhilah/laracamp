@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-8 offset-2">
-                <div class="card">
+                <div class="card mt-3">
                     <div class="card-header">
                         My Camps
                     </div>
@@ -28,7 +28,7 @@
                                         <td>{{$checkout->Camp->price}}k</td>
                                         <td>{{$checkout->created_at->format('M d Y')}}</td>
                                         <td>
-                                            <strong>{{$chekcout->payment_status}}</strong>
+                                            <strong>{{$checkout->payment_status}}</strong>
                                         </td>
                                     </tr>
                                 @empty

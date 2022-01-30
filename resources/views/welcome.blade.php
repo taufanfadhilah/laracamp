@@ -431,7 +431,7 @@
 @push('js')
     <script>
         setTimeout(function(){ 
-            document.getElementById("btn-modal").click();
+            // document.getElementById("btn-modal").click();
          }, 2000);
     </script>
 @endpush 
